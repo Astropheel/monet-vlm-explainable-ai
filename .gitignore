@@ -1,0 +1,15 @@
+.idea/
+__pycache__/
+*.pyc
+*Weights*/
+weights/
+*.pt
+*.pth
+*.ckpt
+.env
+
+data/**/*.jpg
+data/**/*.jpeg
+data/**/*.png
+data/**/labelsTexts.txt
+!data/*/samples/*.jpg
