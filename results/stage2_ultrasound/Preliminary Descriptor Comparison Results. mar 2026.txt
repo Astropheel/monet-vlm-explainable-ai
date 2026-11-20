@@ -1,0 +1,108 @@
+======================== SET 1 ========================
+======================== NT ===========================
+
+--- Final Detection Breakdown ---
+Dataset ID: 'NT' and threshold: '10%'
+Images with at least 1 detection(s): 174 (100.00%)
+Images with at least 2 detection(s): 112 (64.37%)
+Images with at least 3 detection(s): 32 (18.39%)
+Images with at least 4 detection(s): 2 (1.15%)
+
+--- Per-Label Frequency ---
+ - mass with ill-defined margins: 112 (64.37%)
+ - mass across tissue planes: 8 (4.60%)
+ - mass with posterior acoustic shadowing: 174 (100.00%)
+ - mass with heterogeneous internal texture: 26 (14.94%)
+
+======================== T ============================
+
+--- Final Detection Breakdown ---
+Dataset ID: 'T' and threshold: '10%'
+Images with at least 1 detection(s): 105 (100.00%)
+Images with at least 2 detection(s): 47 (44.76%)
+Images with at least 3 detection(s): 35 (33.33%)
+Images with at least 4 detection(s): 3 (2.86%)
+
+--- Per-Label Frequency ---
+ - mass with ill-defined margins: 44 (41.90%)
+ - mass across tissue planes: 38 (36.19%)
+ - mass with posterior acoustic shadowing: 105 (100.00%)
+ - mass with heterogeneous internal texture: 3 (2.86%)
+
+
+
+
+======================== SET 2 ========================
+======================== NT ===========================
+
+--- Final Detection Breakdown ---
+Dataset ID: 'NT' and threshold: '10%'
+Images with at least 1 detection(s): 174 (100.00%)
+Images with at least 2 detection(s): 0 (0.00%)
+Images with at least 3 detection(s): 0 (0.00%)
+Images with at least 4 detection(s): 0 (0.00%)
+Images with at least 5 detection(s): 0 (0.00%)
+
+--- Per-Label Frequency ---
+ - présence syndrome masse: 0 (0.00%)
+ - masse hypoéchogène: 0 (0.00%)
+ - contours irréguliers: 0 (0.00%)
+ - masse hétérogène: 0 (0.00%)
+ - disparition structures canalaires: 174 (100.00%)
+
+======================== T ============================
+
+--- Final Detection Breakdown ---
+Dataset ID: 'T' and threshold: '10%'
+Images with at least 1 detection(s): 105 (100.00%)
+Images with at least 2 detection(s): 0 (0.00%)
+Images with at least 3 detection(s): 0 (0.00%)
+Images with at least 4 detection(s): 0 (0.00%)
+Images with at least 5 detection(s): 0 (0.00%)
+
+--- Per-Label Frequency ---
+ - présence syndrome masse: 0 (0.00%)
+ - masse hypoéchogène: 0 (0.00%)
+ - contours irréguliers: 0 (0.00%)
+ - masse hétérogène: 0 (0.00%)
+ - disparition structures canalaires: 105 (100.00%)
+
+
+
+
+======================== SET 3 ========================
+======================== NT ===========================
+
+--- Final Detection Breakdown ---
+Dataset ID: 'NT' and threshold: '10%'
+Images with at least 1 detection(s): 174 (100.00%)
+Images with at least 2 detection(s): 169 (97.13%)
+Images with at least 3 detection(s): 134 (77.01%)
+Images with at least 4 detection(s): 0 (0.00%)
+Images with at least 5 detection(s): 0 (0.00%)
+
+--- Per-Label Frequency ---
+ - presence of a mass effect: 139 (79.89%)
+ - hypoechoic mass: 167 (95.98%)
+ - irregular margins: 0 (0.00%)
+ - heterogeneous mass: 0 (0.00%)
+ - loss of ductal structures: 171 (98.28%)
+
+======================== T ============================
+
+--- Final Detection Breakdown ---
+Dataset ID: 'T' and threshold: '10%'
+Images with at least 1 detection(s): 105 (100.00%)
+Images with at least 2 detection(s): 97 (92.38%)
+Images with at least 3 detection(s): 60 (57.14%)
+Images with at least 4 detection(s): 0 (0.00%)
+Images with at least 5 detection(s): 0 (0.00%)
+
+--- Per-Label Frequency ---
+ - presence of a mass effect: 89 (84.76%)
+ - hypoechoic mass: 68 (64.76%)
+ - irregular margins: 0 (0.00%)
+ - heterogeneous mass: 0 (0.00%)
+ - loss of ductal structures: 105 (100.00%)
+
+
