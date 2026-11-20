@@ -7,13 +7,14 @@ from PIL import Image
 from torchvision import transforms as T
 import os
 import time
+import re
 
 GPUFlag = True
 
 datasetFlag = "dogs" # landscape, dogs...
 
-trainingImageFolder = f"POC Data/{datasetFlag}/training"
-jsonDescriptors = f"POC Data/{datasetFlag}/training/labelsTexts.json"
+trainingImageFolder = f"data/{datasetFlag}/training"
+jsonDescriptors = f"data/{datasetFlag}/training/labelsTexts.json"
 
 modelPath = "MONET Weights/MONET_vitl14.pth"
 output_dir = "MONET Weights"
@@ -54,7 +55,15 @@ for tags_list in all_tags:
     prompt = f"{datasetFlag} photo containing {', '.join(tags_list)}"
     text_prompts.append(prompt)
 
-image_files = sorted([f for f in os.listdir(trainingImageFolder) if f.lower().endswith('.jpg')])
+image_files = sorted(
+    [f for f in os.listdir(trainingImageFolder) if f.lower().endswith('.jpg')],
+    key=lambda f: int(re.search(r'\((\d+)\)', f).group(1))
+)
+
+for f, p in list(zip(image_files, text_prompts))[:5]:
+    print(f, "->", p)
+    
+
 dataset_pairs = []
 for img_file, prompt in zip(image_files, text_prompts):
     dataset_pairs.append((os.path.join(trainingImageFolder, img_file), prompt))

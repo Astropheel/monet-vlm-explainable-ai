@@ -13,7 +13,7 @@ finetuningFlag = False
 displayFlag = False
 saveFlag = True
 
-image_folder = f"POC Data/{datasetFlag}/testing"
+image_folder = f"data/{datasetFlag}/testing"
 
 if finetuningFlag:
     modelPath = f"MONET Weights/MONET_{datasetFlag}_tuned.pth"

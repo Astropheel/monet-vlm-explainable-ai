@@ -5,7 +5,7 @@ import os
 from support_functions import *
 
 datasetID = "dogs"  # "dogs" or "landscape"
-image_folder = f"POC Data/{datasetID}/testing"
+image_folder = f"data/{datasetID}/testing"
 output_folder=f"CLIP Results/{datasetID}"
 displayFigures = True
 saveFigures = False
