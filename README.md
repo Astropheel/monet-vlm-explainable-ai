@@ -1,0 +1,1 @@
+The reported results come from the original experiments. For publication, the scripts were reorganized (data paths) and the training images are now sorted numerically so they match the annotation order. They were not re-run afterwards, so small differences from the reported numbers are possible.
