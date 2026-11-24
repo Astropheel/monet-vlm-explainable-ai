@@ -14,7 +14,7 @@ finetuningFlag = False
 displayFigures = False
 saveFigures = False
 
-image_folder = f"POC Data/LIS/{datasetFlag}"
+image_folder = f"data/LIS/{datasetFlag}"
 
 if finetuningFlag:
     modelPath = f""
