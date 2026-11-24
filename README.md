@@ -66,7 +66,7 @@ MONET was applied **without fine-tuning** to ultrasound images from a lab collec
 
 Raw output counts are in [`results/stage2_ultrasound/`](results/stage2_ultrasound/).
 
-**Data statement:** the ultrasound images came from a confidential lab collection. They are not included and were deleted after the project. The Stage 2 code is not included in this repository.
+**Data statement:** the ultrasound images came from a confidential lab collection. They are **not included** and were deleted after the project. The Stage 2 script (`5_monet_test_lis.py`) is included for transparency, but it **cannot be run** without that data.
 
 ## Repository structure
 
@@ -76,6 +76,7 @@ Raw output counts are in [`results/stage2_ultrasound/`](results/stage2_ultrasoun
 ├── 2_monet_finetune.py      # fine-tunes MONET on dogs or landscape
 ├── 3_monet_test_all.py      # tests MONET (original / fine-tuned)
 ├── 4_clip_test_all.py       # tests CLIP ViT-L/14
+├── 5_monet_test_lis.py      # Stage 2: MONET on ultrasound images (data not included)
 ├── support_functions.py     # helper functions and plotting
 ├── requirements.txt
 ├── data/                    # annotations, file lists, samples (see data/README.md)
@@ -100,7 +101,9 @@ The full image sets are not redistributed (size and licensing). See [`data/READM
 
 ## Usage
 
-Run the scripts in numerical order from the repository root. Set `datasetFlag` at the top of each script to `"dogs"` or `"landscape"`.
+Run scripts 1 to 4 in numerical order from the repository root. Set `datasetFlag` at the top of each script to `"dogs"` or `"landscape"`.
+
+Script 5 expects ultrasound images in `data/LIS/T` and `data/LIS/NT`. This dataset is confidential and not provided, so the script is there to document the Stage 2 method only.
 
 ## Notes and limitations
 
@@ -115,3 +118,4 @@ Run the scripts in numerical order from the repository root. Set `datasetFlag` a
 - **MONET:** Kim et al., *Transparent medical image AI via an image-text foundation model grounded in medical literature*, Nature Medicine 30 (2024). [Code](https://github.com/suinleelab/MONET)
 - **CLIP:** Radford et al., *Learning Transferable Visual Models From Natural Language Supervision*, ICML 2021. [Code](https://github.com/openai/CLIP)
 - Images: [dog.ceo](https://dog.ceo/) / Stanford Dogs and [Unsplash](https://unsplash.com/) photographers.
+
